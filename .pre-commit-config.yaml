@@ -19,6 +19,10 @@ repos:
     rev: v2.0.2
     hooks:
       - id: autopep8
+  - repo: https://github.com/jazzband/pip-tools
+    rev: 6.13.0
+    hooks:
+      - id: pip-compile
   # - repo: https://github.com/pycqa/flake8
   #   rev: 4.0.1
   #   hooks:
