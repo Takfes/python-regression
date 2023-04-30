@@ -19,3 +19,10 @@ repos:
         language: system
         types: [python]
         files: ^(?!\.venv|venv|env|migration).*\.py$
+      - id: pip-compile
+        name: pip-compile
+        entry: pip-compile
+        language: system
+        types: [python]
+        pass_filenames: false
+        args: ["requirements.in"]
