@@ -15,6 +15,10 @@ repos:
     rev: 5.12.0
     hooks:
       - id: isort
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v2.0.2
+    hooks:
+      - id: autopep8
   # - repo: https://github.com/pycqa/flake8
   #   rev: 4.0.1
   #   hooks:
@@ -26,7 +30,3 @@ repos:
   #       types: [python]
   #       files: ^(?!\.venv|venv|env|migration).*\.py$
   #       args: [--extend-ignore=B950]
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.2
-    hooks:
-      - id: autopep8
